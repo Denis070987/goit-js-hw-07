@@ -32,6 +32,7 @@ function onImgClick(event) {
 	<img src="${event.target.dataset.source}">
 `)
     instance.show();
+    
     divGallery.addEventListener("keydown", (event) => {
         if (event.code === 'Escape') {
             instance.close()

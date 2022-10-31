@@ -19,16 +19,9 @@ function creatGallery(galleryItems) {
 
 const addGallery = creatGallery(galleryItems);
 divGallery.innerHTML = addGallery;
-divGallery.addEventListener('click', onImgClick);
-function onImgClick(event) {
-    
-    if (event.target.nodeName !== 'IMG') {
-      return
-    }
+
     new SimpleLightbox('.gallery__item a', {captionsData: "alt",
   captionDelay: 250,});
-} 
 
-console.log(galleryItems);
 
 
